@@ -1,200 +1,159 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "David Macias",
+    "label": "Data Analyst",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "davidbmacias10@gmail.com",
+    "phone": "(720)-372-8511",
+    "url": "",
+    "summary": "Versatile data professional with hands-on experience in data engineering, analytics, and machine learning. In my current role, I’ve been responsible for the full data workflow—from building pipelines and transforming data to developing models and delivering insights—effectively functioning as a data engineer, analyst, and scientist in one. I'm driven by solving real problems with scalable, data-driven solutions, and I bring a strong background in mathematics, statistics, and numerical analysis.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "",
+      "postalCode": "",
+      "city": "",
       "countryCode": "US",
-      "region": "California"
+      "region": "Texas"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "profiles": []
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "El Paso County",
+      "position": "Data Analyst",
+      "url": "",
+      "startDate": "2024-04-01",
+      "endDate": "",
+      "summary": "Built data pipelines and improved data recall and accessibility across departments. Led to the development data analytics and data science accessability across departments.",
+      "highlights": [
+        "Completed ETL from various sources, along with data wrangling to make data analysis functional",
+        "Created data pipelines for real-time reporting",
+        "Increased data accessibility for non-technical staff",
+        "Utilized Web APIs to improve training datasets",
+        "Used AI and Machine Learning methods to forecast budgeting needs"
+      ]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "New Mexico State University",
+      "position": "Graduate Researcher",
+      "url": "",
+      "startDate": "2022-02-01",
+      "endDate": "2024-05-01",
+      "summary": "Focused on predictive modeling and classification using AI and machine learning methods. Built and evaluated machine learning models, conducted data cleaning, and created visual dashboards for research outputs.",
+      "highlights": [
+        "Developed predictive models using Python, TensorFlow, and scikit-learn",
+        "Created visualizations using PowerBI, Tableau and matplotlib",
+        "Led feature selection and metric optimization efforts"
+      ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "institution": "New Mexico State University",
+      "location": "Las Cruces, NM",
+      "url": "",
+      "area": "Data Analytics",
+      "studyType": "Master's",
+      "startDate": "2022-01-01",
+      "endDate": "2024-05-01",
+      "score": "3.7+ GPA",
+      "courses": [
+        "Machine Learning for Algorithm Development",
+        "Time Series Analysis"
+      ]
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "institution": "University of Texas at El Paso",
+      "location": "El Paso, TX",
+      "url": "",
+      "area": "Computational Physics",
+      "studyType": "Bachelor's",
+      "startDate": "2016-01-01",
+      "endDate": "2020-01-01",
+      "score": "",
+      "courses": [
+        "Numerical Analysis",
+        "Mathematical Methods",
+        "Computational Modeling",
+        "Signal Processing"
+      ]
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Data Analysis & Machine Learning",
+      "level": "Advanced",
+      "icon": "",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python",
+        "scikit-learn",
+        "TensorFlow",
+        "Time Series Forecasting",
+        "Regression",
+        "Feature Engineering"
       ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Data Engineering",
+      "level": "Intermediate",
+      "icon": "",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Azure",
+        "Apache Spark",
+        "MySQL",
+        "Databricks"
       ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Visualization & Reporting",
+      "level": "Advanced",
+      "icon": "",
+      "keywords": [
+        "PowerBI",
+        "Tableau",
+        "Matplotlib",
+        "Excel"
+      ]
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Driving Telematics Analysis and Signal Processing",
+      "summary": "Processed raw phone sensor data (magnetometer, accelerometer, gyroscope, Euler angles) to derive usable driver behavior features. Modeled and predicted risky driving behaviors using XGBoost and other machine learning methods. Developed risk and safety scores for pricing strategies in insurance modeling.",
+      "highlights": [
+        "Sensor data processing",
+        "Feature engineering",
+        "XGBoost modeling",
+        "Crash risk scoring"
+      ],
+      "startDate": "2024",
+      "endDate": "2025",
+      "url": ""
+    },
+    {
+      "name": "AI LLM Survey Analysis",
+      "summary": "Created an end-to-end pipeline analyzing surveys using a large language model to extract sentiment and identify positive/negative keywords. Applied NLP techniques, keyword extraction, classification, and sentiment analysis to derive trends from open-ended responses.",
+      "highlights": [
+        "LLM integration",
+        "Sentiment analysis",
+        "NLP keyword extraction",
+        "Pipeline automation"
+      ],
+      "startDate": "2024",
+      "endDate": "2025",
+      "url": ""
+    },
+    {
+      "name": "X-Ray Signal Processing with AI and Machine Learning",
+      "summary": "Converted raw astronomical X-ray signal data into structured inputs for machine learning models. Used PCA, KMeans, and SGD to distinguish between stars, galaxies, and pulsars with a prediction accuracy of 96%.",
+      "highlights": [
+        "Signal processing",
+        "Unsupervised clustering (PCA, KMeans)",
+        "Supervised learning (SGD)",
+        "Astronomical classification"
+      ],
+      "startDate": "2022",
+      "endDate": "2024",
+      "url": ""
     }
   ]
 }
