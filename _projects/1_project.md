@@ -1,26 +1,24 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Driving Telematics and Signal Processing
+description: Prediction of crashes based on driving behavior.
 img: assets/img/12.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+In this project, with my experience in raw signal processing and machine learning prediction modeling, I processed raw sensor feeds into meaningful driver behavior. 
+The data is from the US Department of Transportation and consists of about 28000 trips and 3500 drivers. It is composed of 1800 crashes, 6700 near-crashes and 19800 baseline trips.
+This in turn was used to develop a prediction model based on the drivers with a collision and all their trips. 
+Stats on trips of drivers who have crashed were used to develop a profile of what crash-prone driving characteristics look like.
+XGBoost was used to test, train, fit and predict with a Train Score Accuracy of 98% and a Test Score Accuracy of 96%.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This model was then fed data on the driving behavior of drivers' trips who have never crashed. Drivers with similar driving behavior to those who have crashed  were flagged.
+Redundancy to prevent overfitting was implemented with multiple versions of the XGBoost model. 
+Crashless drivers who were flagged across multiple models on more of their trips were deemed riskier than drivers who were only flagged once on one model on a single trip.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
+These risk scores (and probabilities) can then be used to create and determine pricing adjustments for these drivers.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
