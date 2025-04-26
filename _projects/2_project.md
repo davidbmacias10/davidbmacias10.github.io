@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 1
+title: X-Ray Signal Processing
 description: with background image
 img: assets/img/11.jpg
 importance: 1
