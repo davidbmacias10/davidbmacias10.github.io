@@ -419,8 +419,8 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
+            },},{id: "projects-etl-live-pipeline",
+          title: 'ETL Live Pipeline',
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
