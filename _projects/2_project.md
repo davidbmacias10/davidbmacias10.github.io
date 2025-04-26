@@ -20,7 +20,7 @@ related_publications: true
 <div class="mt-5 mb-5">
   <h2>Full Project Report</h2>
   <div style="height: 600px; overflow: auto; border: 1px solid #ccc; padding: 10px;">
-    <iframe src="assets/pdf/report.pdf" width="100%" height="100%" style="border: none;"></iframe>
+    <iframe src="https://docs.google.com/gview?url=https://davidbmacias10.github.io/assets/pdf/report.pdf&embedded=true" style="width:100%; height:600px;" frameborder="0"></iframe>
   </div>
 </div>
 
