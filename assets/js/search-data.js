@@ -393,7 +393,12 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-computational-methods-for-quantitative-finance",
+      },{id: "books-the-9-pitfalls-of-data-science",
+          title: 'The 9 Pitfalls of Data Science',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/9/";
+            },},{id: "books-computational-methods-for-quantitative-finance",
           title: 'Computational Methods for Quantitative Finance',
           description: "",
           section: "Books",handler: () => {
