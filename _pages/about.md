@@ -6,7 +6,7 @@ subtitle: M.S. Data Analytics,               B.S. Computational Physics
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pif.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <a href='https://www.linkedin.com/in/david-macias-76155617b/'>Linkedin</a>
