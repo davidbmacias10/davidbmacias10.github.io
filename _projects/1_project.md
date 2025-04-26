@@ -1,79 +1,150 @@
 ---
 layout: page
-title: Driving Telematics and Signal Processing
-description: Prediction of crashes based on driving behavior.
+title: Driver Risk Prediction and Scoring
+description: Prediction of crash risk based on driving behavior using machine learning.
 img: assets/img/12.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-In this project, with my experience in raw signal processing and machine learning prediction modeling, I processed raw sensor feeds into meaningful driver behavior. 
-The data is from the US Department of Transportation and consists of about 28000 trips and 3500 drivers. It is composed of 1800 crashes, 6700 near-crashes and 19800 baseline trips.
-This in turn was used to develop a prediction model based on the drivers with a collision and all their trips. 
-Stats on trips of drivers who have crashed were used to develop a profile of what crash-prone driving characteristics look like.
-XGBoost was used to test, train, fit and predict with a Train Score Accuracy of 98% and a Test Score Accuracy of 96%.
+# Project Summary
 
-This model was then fed data on the driving behavior of drivers' trips who have never crashed. Drivers with similar driving behavior to those who have crashed  were flagged.
-Redundancy to prevent overfitting was implemented with multiple versions of the XGBoost model. 
-Crashless drivers who were flagged across multiple models on more of their trips were deemed riskier than drivers who were only flagged once on one model on a single trip.
+## Introduction
 
-These risk scores (and probabilities) can then be used to create and determine pricing adjustments for these drivers.
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+This project focuses on predicting risky driving behavior using a dataset of participant trip data, including features like speed, acceleration, and turning dynamics. The goal was not only to predict crash events but also to develop a meaningful driver-level risk score that could serve as a proxy for future risk—even among drivers who have never crashed.
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The project was conducted with an analytical mindset, blending exploratory data analysis, iterative model development, and insight-driven segmentation of participants. The tone throughout this work is both rigorous and thoughtful, with an emphasis on making the results actionable and interpretable.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+---
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+# Phase 1: Data Exploration & Preparation
 
-{% raw %}
+The first step was understanding the structure and reliability of the dataset. The data contained multiple trips per participant and various driving behavior metrics (e.g., `maxspeed`, `maxaccel`, `minturnrate`).
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+Key data preparation steps included:
 
-{% endraw %}
+- Removing rows with missing or non-numeric values in key features
+- Converting columns like `timemoving` from string representations (e.g., with commas or "nan") to integers
+- Labeling the `event_severity` column:
+  - 0 = Baseline (no incident)
+  - 1 = Near-Crash
+  - 2 = Crash
+
+<!-- Insert: Cleaned data preview table or screenshot here -->
+
+---
+
+# Phase 2: Feature Selection & Modeling Strategy
+
+We began with a core set of nine behavioral features that intuitively capture risky driving:
+
+- **Speed**: `maxspeed`, `meanspeed`
+- **Acceleration**: `maxaccel`, `maxdecel`
+- **Lateral and turning behavior**: `maxlataccel`, `minlataccel`, `maxturnrate`, `minturnrate`
+- **Time spent moving**: `timemoving`
+
+### Model Training:
+
+Three binary classification models were trained using XGBoost:
+
+- Crash vs No Crash
+- Near-Crash vs No Crash
+- Any Risk (Crash or Near-Crash) vs No Crash
+
+Each model was evaluated using:
+
+- Train/Test accuracy
+- Confusion matrices
+- Classification reports
+
+<!-- Insert: Model performance metrics and confusion matrices here -->
+
+### Additional Features:
+
+We explored adding bucketed time/distance features, but found marginal gains (<5%).  
+The core feature set was retained for clarity and consistency.
+
+---
+
+# Phase 3: Insight — Crashers Are a Different Group
+
+A major insight emerged: drivers who eventually crashed often had high-risk metrics even during their "normal" trips without a crash.
+
+This revealed a key modeling challenge:
+
+- Risky driving patterns appeared both when a crash happened and when it didn’t.
+- Generalizing from crash-only labels was not always sufficient.
+
+### Improving Realism:
+
+- We isolated drivers who **never** crashed.
+- Models were tested on these "safe" drivers to simulate real-world deployment.
+
+<!-- Insert: Graph comparing flagged trips across crashers vs non-crashers -->
+
+---
+
+# Phase 4: Scoring Drivers Based on Multi-Model Flags
+
+Recognizing that different models had different predictive strengths, we developed a **weighted scoring system**:
+
+| Model Type  | Weight |
+|-------------|--------|
+| Crash       | 3      |
+| Near-Crash  | 2      |
+| Any Risk    | 1      |
+
+Each trip received a score (0–6) based on the models that flagged it.  
+Driver-level scores were aggregated to create a full risk profile.
+
+### Risk Categories:
+
+| Risk Score Range | High-Risk Trip % | Final Risk Label |
+|------------------|------------------|------------------|
+| ≤ 3              | < 5%              | Very Low Risk    |
+| ≤ 4              | < 10%             | Low Risk         |
+| ≥ 5              | 10–30%            | Moderate Risk    |
+| ≥ 5              | 30–60%            | High Risk        |
+| ≥ 5              | > 60%             | Very High Risk   |
+
+<!-- Insert: Table of sample driver-level risk summaries here -->
+<!-- Insert: Bar chart showing number of drivers by risk category -->
+
+---
+
+# Final Thoughts
+
+This project demonstrates several key lessons:
+
+- **Understanding segment behavior** dramatically improves modeling strategies.
+- **Combining multiple models** using a weighted scoring system leads to more reliable insights.
+- **Creating user-level risk profiles** is a powerful extension beyond basic classification tasks.
+
+The result is a predictive system that can:
+
+- Identify risky driving behavior patterns,
+- Forecast potential risk among safe drivers,
+- Provide actionable, interpretable scoring for future applications.
+
+---
+
+# Future Work
+
+- Incorporating temporal driving trends (e.g., changes in behavior over time)
+- Testing ensemble models beyond XGBoost
+- Fine-tuning thresholds for different use cases (insurance pricing, driver training feedback)
+
+---
+
+# Planned Inserts
+
+✅ Cleaned Data Preview  
+✅ Model Metrics & Confusion Matrices  
+✅ Comparison Graph: Crashers vs Non-Crashers  
+✅ Sample Driver Risk Summary Table  
+✅ Risk Distribution Bar Chart  
+✅ Example Code Snippets (Preprocessing, Modeling, Scoring)
+
+---
+
