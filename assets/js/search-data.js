@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-resume",
           title: "resume",
-          description: "I am more than happy to elaborate to speak and elaborate on my skills and experience. Feel free to reach out!",
+          description: "I am more than happy to elaborate and speak on my skills and experience. Feel free to reach out!",
           section: "Navigation",
           handler: () => {
             window.location.href = "/resume/";
