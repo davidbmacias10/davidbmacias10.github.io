@@ -1,0 +1,18 @@
+---
+layout: book-review
+title: The 9 Pitfalls of Data Science
+author: Gary Smith and Jay Cordes
+cover: assets/img/book_covers/9_pitfalls_data_science.jpg
+isbn: 9780198844396
+categories: data-science analytics critical-thinking
+tags: data-ethics statistical-errors
+buy_link: https://www.amazon.com/9-Pitfalls-Data-Science/dp/0198844395
+started: 2025-02-10
+finished: 2025-02-25
+released: 2019
+stars: 4
+goodreads_review: 6318556643
+status: Finished
+---
+
+*The 9 Pitfalls of Data Science* by Gary Smith and Jay Cordes offers a compelling exploration of common errors and misconceptions in the field of data science. Through real-world examples, the authors illuminate how misinterpretations and biases can lead to flawed conclusions. It gives concrete examples to help sharpen analytical skills. It serves as a reminder to approach data with a critically and to always consider the broader context. It's a valuable resource for anyone looking to navigate the complexities of data-driven decision-making.
