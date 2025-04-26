@@ -464,9 +464,9 @@ ninja.data = [{
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-etl-live-pipeline",
-          title: 'ETL Live Pipeline',
-          description: "with background image",
+            },},{id: "projects-home-valuation-model-cost-and-market-approaches",
+          title: 'Home Valuation Model - Cost and Market Approaches',
+          description: "Developing a Machine Learning Assisted Appraisal Model",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-1",
