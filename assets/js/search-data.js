@@ -393,7 +393,47 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
+      },{id: "books-computational-methods-for-quantitative-finance",
+          title: 'Computational Methods for Quantitative Finance',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Comp/";
+            },},{id: "books-minding-the-machines",
+          title: 'Minding the Machines',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Dat/";
+            },},{id: "books-green-eggs-and-ham",
+          title: 'Green Eggs and Ham',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Green/";
+            },},{id: "books-life-in-code",
+          title: 'Life in Code',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Life/";
+            },},{id: "books-machine-learning-algorithms-in-depth",
+          title: 'Machine Learning Algorithms in Depth',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Mac/";
+            },},{id: "books-quantum-field-theory-for-the-gifted-amateur",
+          title: 'Quantum Field Theory for the Gifted Amateur',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Qft/";
+            },},{id: "books-real-estate-valuation-theory",
+          title: 'Real Estate Valuation Theory',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Real/";
+            },},{id: "books-how-the-universe-got-its-spots",
+          title: 'How the Universe Got Its Spots',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Universe/";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
