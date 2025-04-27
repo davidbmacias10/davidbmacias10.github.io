@@ -12,7 +12,7 @@ finished: 2024-11-30
 released: 2024
 stars: 5
 goodreads_review: 6318556640
-status: Finished
+status: Reading
 ---
 
-This book offered a thorough exploration of machine learning algorithms, delving into their mathematical foundations and practical implementations. It enhanced my ability to troubleshoot models and improve their performance, solidifying my expertise in machine learning. The hands-on examples and clear explanations made complex algorithms more accessible.
+It made sense to learn the math behind the machine. It helps you understand the limitations of your code, predictions and fit. But on the other end, it shows you how limited the algorithms we have truly are. If anything, this text actively inspires me to innovate, create and build on our current machine learning standards.

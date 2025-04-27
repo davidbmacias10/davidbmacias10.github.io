@@ -8,11 +8,11 @@ categories: finance computational-methods mathematics
 tags: quantitative-analysis
 buy_link: https://www.amazon.com/Computational-Methods-Quantitative-Finance-Derivative/dp/3642435327
 started: 2024-09-01
-finished: 2024-09-30
+finished:
 released: 2015
 stars: 5
 goodreads_review: 6318556638
-status: Finished
+status: Reading
 ---
 
-This comprehensive guide to finite element methods in derivative pricing expanded my understanding of computational finance. The book's detailed explanations of numerical methods and their applications in financial modeling were instrumental in enhancing my quantitative analysis skills. It bridged the gap between theoretical mathematics and practical financial applications.
+I had to put my money where my mouth is. Quantitative researchers hate this one trick: math that's beyond the scope of most graduates just because of it's niche and convulated use so that it can be put to practice. I don't read this material for fun, it's for an upcoming project on analyzing retail traders to generate alpha. Coming soon to hedge fund near you.

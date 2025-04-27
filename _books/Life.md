@@ -8,11 +8,11 @@ categories: technology memoir software
 tags: personal-history
 buy_link: https://www.amazon.com/Life-Code-Personal-History-Technology/dp/1250181690
 started: 2024-07-01
-finished: 2024-07-15
+finished: 
 released: 2017
 stars: 5
 goodreads_review: 6318556636
-status: Finished
+status: Reading
 ---
 
-Ellen Ullman's reflections on her experiences as a software engineer offered a deeply personal perspective on the tech industry's evolution. Her essays highlighted the human aspects of coding and the ethical considerations in technology development. This book resonated with my own journey in tech, emphasizing the importance of empathy and critical thinking in software engineering.
+I had never thought of myself as a computer scientist, I liked the original term: calculator. And I learned to Calculate because of the need that exists in Physics and Math. But at the end of the day, it's just code.

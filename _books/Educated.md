@@ -15,4 +15,4 @@ goodreads_review: 6318556642
 status: Finished
 ---
 
-Tara Westover's *Educated* is a memoir where Dr Westover relates her pursuit and uphill battle in obtaining an education. Raised in a survivalist family that sidelined formal education and medical care, Westover's pursuit of knowledge was inspiring. Her story resonated deeply with me, my education wasn't a given but a pirvilege I had to fight for every day.&#8203;:contentReference[oaicite:1]{index=1}
+Tara Westover's *Educated* is a memoir where Dr Westover relates her pursuit and uphill battle in obtaining an education. Raised in a survivalist family that sidelined formal education and medical care, Westover's pursuit of knowledge was inspiring. Her story resonated deeply with me: my education wasn't a given but a privilege I had to fight for every day. I'm glad I did.
