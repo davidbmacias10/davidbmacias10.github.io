@@ -45,7 +45,7 @@ def cost_approach(replacement_cost, depreciation_amount, land_value):
     """
     property_value = (replacement_cost - depreciation_amount) + land_value
     return property_value
-
+ 
 # Example usage
 replacement_cost = 250000  # dollars
 depreciation_amount = 30000  # dollars
