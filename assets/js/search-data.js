@@ -413,11 +413,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/Educated/";
-            },},{id: "books-green-eggs-and-ham",
-          title: 'Green Eggs and Ham',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/Green/";
             },},{id: "books-life-in-code",
           title: 'Life in Code',
           description: "",
