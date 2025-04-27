@@ -84,19 +84,19 @@ Each model was evaluated using:
 
 Drivers who eventually crashed exhibited risky behavior even during normal trips.
 
-![Mean Speed vs Max Acceleration (Safe Participants)](assets/img/2.jpg)
+![Mean Speed vs Max Acceleration (Safe Participants)](/assets/img/2.jpg)
 
-![Mean Speed vs Max Acceleration (Crash Participants)](assets/img/3.jpg)
+![Mean Speed vs Max Acceleration (Crash Participants)](/assets/img/3.jpg)
 
 We observed clear shifts in behavior between safe and crash participants, motivating a split in model testing.
 
 **Feature Correlations:**
 
-![Correlation Heatmap (Safe Participants)](assets/img/4.jpg)
+![Correlation Heatmap (Safe Participants)](/assets/img/4.jpg)
 
-![Correlation Heatmap (Crash Participants)](assets/img/5.jpg)
+![Correlation Heatmap (Crash Participants)](/assets/img/5.jpg)
 
-![Correlation Heatmap (All Participants)](assets/img/6.jpg)
+![Correlation Heatmap (All Participants)](/assets/img/6.jpg)
 
 ---
 
