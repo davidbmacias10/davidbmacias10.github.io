@@ -18,25 +18,9 @@ related_publications: true
 
 <!-- 📄 Scrollable Embedded PDF Section -->
 <div class="mt-5 mb-5">
-  <div class="mt-5 mb-5">
-    <h2>Full Project Report</h2>
-    <a href="assets/pdf/report.pdf" target="_blank" class="btn btn-primary mb-3">📄 View Full Report (PDF)</a>
+  <h2>Full Project Report</h2>
+  <div style="height: 600px; overflow: auto; border: 1px solid #ccc; padding: 10px;">
+    <embed src="https://davidbmacias10.github.io/assets/pdf/report.pdf" width="100%" height="100%" type="application/pdf">
+    <p>If the PDF does not load, <a href="https://davidbmacias10.github.io/assets/pdf/report.pdf" target="_blank">click here to view or download it.</a></p>
   </div>
-</div>
-
-<!-- 📸 Project Images Section -->
-<div class="row mt-5">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-<div class="caption">
-    Example images from the X-ray processing workflow.
 </div>
