@@ -44,7 +44,7 @@ df_cleaned = df_cleaned.dropna(subset=['timemoving'])
 df_cleaned['timemoving'] = df_cleaned['timemoving'].astype(int)
 ```
 
-![Mean Speed vs Max Acceleration (All Data)](assets/img/1.jpg)
+![Mean Speed vs Max Acceleration (All Data)](/assets/img/1.jpg)
 
 Initially, it was difficult to separate safe vs risky drivers by plotting `meanspeed` and `maxaccel`. The distributions largely overlapped.
 
