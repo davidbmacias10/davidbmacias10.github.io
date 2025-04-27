@@ -461,7 +461,7 @@ ninja.data = [{
               window.location.href = "/projects/1_project/";
             },},{id: "projects-x-ray-signal-processing",
           title: 'X-Ray Signal Processing',
-          description: "with background image",
+          description: "Stellar Object Classification through Machine Learning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-home-valuation-model-cost-and-market-approaches",
