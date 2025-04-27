@@ -1,10 +1,10 @@
 ---
 layout: page
 title: X-Ray Signal Processing
-description: with background image
+description: Stellar Object Classification through Machine Learning
 img: assets/img/11.jpg
 importance: 1
-category: work
+category: research
 related_publications: true
 ---
 
