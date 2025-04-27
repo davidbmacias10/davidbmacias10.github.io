@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: 
+description: Projects that are completed or ongoing related to work or research.
 nav: true
 nav_order: 3
 display_categories: [work, research, personal]
