@@ -454,9 +454,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-driving-telematics-and-signal-processing",
-          title: 'Driving Telematics and Signal Processing',
-          description: "Prediction of crashes based on driving behavior.",
+          section: "News",},{id: "projects-driver-risk-prediction-and-scoring",
+          title: 'Driver Risk Prediction and Scoring',
+          description: "Prediction of crash risk based on driving behavior using machine learning.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-x-ray-signal-processing",
