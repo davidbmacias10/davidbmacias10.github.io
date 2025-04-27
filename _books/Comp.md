@@ -15,4 +15,4 @@ goodreads_review: 6318556638
 status: Reading
 ---
 
-I had to put my money where my mouth is. Quantitative researchers hate this one trick: math that's beyond the scope of most graduates just because of it's niche and convulated use so that it can be put to practice. I don't read this material for fun, it's for an upcoming project on analyzing retail traders to generate alpha. Coming soon to hedge fund near you.
+I had to put my money where my mouth is. Quantitative researchers hate this one trick: math that's beyond the scope of most graduates just because of its niche and convulated use just so that it can be put to practice. I don't read this material for fun, it's for an upcoming project on analyzing retail traders to generate alpha. Coming soon to a hedge fund near you.
