@@ -15,4 +15,4 @@ goodreads_review: 6318556637
 status: Reading
 ---
 
-Astrophysics led me hear: trying to understand gravity on a quantum scale. DOn't be fooled, it says 'for the Gifted Amateur', I think they mean the genius amateur. But that's why this book influenced me so much, because it was a challenge. I don't do anything but challenges, and I had finally met my match trying to understand and put to practical use, the math buried between each line of this text. 
+Astrophysics led me here: trying to understand gravity on a quantum scale. Don't be fooled, it says 'for the Gifted Amateur', I think they mean the genius amateur. But that's why this book influenced me so much, because it was a challenge. Challenges are my bread and butter, but I had finally met my match trying to understand and put to practical use, the math buried between each line of this text. I'll give you the Sparknotes when I'm done.

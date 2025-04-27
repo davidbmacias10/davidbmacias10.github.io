@@ -15,4 +15,4 @@ goodreads_review: 6318556635
 status: Finished
 ---
 
-I doubted myself, I doubted that I had made the right choice when choosing to pursue a degree in Physics. Janna Levin, astrophysicist, says she struggled and doubted herself too. Not only did this book convince to continue and complete my major, and gave me a soft spot for all things astrophysics related. Love me some black holes and dark matter.
+I doubted myself, I doubted that I had made the right choice when choosing to pursue a degree in Physics. Janna Levin, astrophysicist, says she struggled and doubted herself too. Not only did this book convince me to continue and complete my major, it gave me a soft spot for all things astrophysics related. Love me some black holes and dark matter.
