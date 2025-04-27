@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Math makes our modern day living work, but I like making numbers work for me—math, stats, and quantitative methods are where I’m most at home. 
+Math makes our modern day living work; I like making numbers work for me — math, stats, and quantitative methods are where I’m most at home. 
 
 Over the years, I’ve built out full workflows that cover everything from engineering data pipelines to deploying machine learning models. What I enjoy most is making data make sense—building tools, visuals, and models that help people actually see beyond a spreadsheet or graph and be confident in their decision. I'm driven by the challenge of finding solutions and doing analysis that’s not just solid, but truly a cut above—clear, thoughtful, and built to make an impact.
 
