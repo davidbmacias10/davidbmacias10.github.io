@@ -30,26 +30,117 @@ Where:
 ## Python Code Implementation
 
 ```python
-def cost_approach(replacement_cost, depreciation_amount, land_value):
+def estimate_initial_cost_per_sqft(base_cost, location_multiplier=1.0, quality_multiplier=1.0, size_multiplier=1.0):
     """
-    Calculate the estimated property value using the Cost Approach.
+    Estimate initial construction cost per square foot.
 
     Args:
-        replacement_cost (float): Cost to replace or reproduce the structure.
-        depreciation_amount (float): Estimated total depreciation.
-        land_value (float): Estimated value of the land.
+        base_cost (float): Base national or regional average cost per square foot.
+        location_multiplier (float): Regional adjustment factor (default 1.0 = no adjustment).
+        quality_multiplier (float): Quality adjustment factor (default 1.0 = average quality).
+        size_multiplier (float): Size efficiency adjustment factor (default 1.0 = standard size).
 
     Returns:
-        float: Estimated total property value.
+        float: Adjusted estimated cost per square foot.
     """
-    property_value = (replacement_cost - depreciation_amount) + land_value
-    return property_value
+    return base_cost * location_multiplier * quality_multiplier * size_multiplier
 
-# Example usage
-replacement_cost = 250000  # dollars
-depreciation_amount = 30000  # dollars
-land_value = 50000  # dollars
+def calculate_replacement_cost(cost_per_sqft, living_area_sqft):
+    """
+    Calculate replacement cost.
 
-estimated_value = cost_approach(replacement_cost, depreciation_amount, land_value)
-print(f"Estimated Property Value: ${estimated_value:,.2f}")
+    Args:
+        cost_per_sqft (float): Cost to rebuild per square foot.
+        living_area_sqft (float): Living area size in square feet.
+
+    Returns:
+        float: Replacement cost estimate.
+    """
+    return cost_per_sqft * living_area_sqft
+
+def calculate_depreciation(replacement_cost, age, useful_life=50):
+    """
+    Calculate straight-line depreciation amount.
+
+    Args:
+        replacement_cost (float): Replacement cost.
+        age (int): Age of structure in years.
+        useful_life (int): Expected useful life (default 50 years).
+
+    Returns:
+        float: Depreciation amount.
+    """
+    depreciation_percentage = min(age / useful_life, 1.0)  # Cap at 100%
+    return replacement_cost * depreciation_percentage
+
+def estimate_property_value(
+    base_cost,
+    living_area_sqft,
+    land_value,
+    age,
+    location_multiplier=1.0,
+    quality_multiplier=1.0,
+    size_multiplier=1.0,
+    useful_life=50
+):
+    """
+    Full Home Value Estimation based on cost approach.
+
+    Args:
+        base_cost (float): Base average cost per square foot.
+        living_area_sqft (float): Living area of the home.
+        land_value (float): Land value.
+        age (int): Age of the structure in years.
+        location_multiplier (float): Adjustment for regional construction costs.
+        quality_multiplier (float): Adjustment for construction quality.
+        size_multiplier (float): Adjustment for size efficiency.
+        useful_life (int): Expected useful life (default 50 years).
+
+    Returns:
+        dict: Full breakdown including cost_per_sqft, replacement_cost, depreciation, final_property_value.
+    """
+    cost_per_sqft = estimate_initial_cost_per_sqft(
+        base_cost,
+        location_multiplier,
+        quality_multiplier,
+        size_multiplier
+    )
+    replacement_cost = calculate_replacement_cost(cost_per_sqft, living_area_sqft)
+    depreciation_amount = calculate_depreciation(replacement_cost, age, useful_life)
+    final_property_value = (replacement_cost - depreciation_amount) + land_value
+
+    return {
+        "Cost per Square Foot": cost_per_sqft,
+        "Replacement Cost": replacement_cost,
+        "Depreciation Amount": depreciation_amount,
+        "Final Estimated Property Value": final_property_value
+    }
+
+# --------------------------
+# Example Usage
+# --------------------------
+
+# Assume:
+base_cost = 120               # Base cost per sqft (national/regional average)
+living_area_sqft = 2000        # Living area size
+land_value = 50000             # Land value in dollars
+age_of_home = 20               # Age in years
+location_multiplier = 1.10     # Slightly higher regional construction costs (+10%)
+quality_multiplier = 1.15      # Higher-quality construction (+15%)
+size_multiplier = 0.95         # Larger home (slight discount per sqft)
+
+# Calculate
+results = estimate_property_value(
+    base_cost,
+    living_area_sqft,
+    land_value,
+    age_of_home,
+    location_multiplier,
+    quality_multiplier,
+    size_multiplier
+)
+
+# Print Results
+for key, value in results.items():
+    print(f"{key}: ${value:,.2f}")
 ```
