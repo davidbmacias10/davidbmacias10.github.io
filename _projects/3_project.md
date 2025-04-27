@@ -5,7 +5,7 @@ description: Developing a Machine Learning Assisted Appraisal Model
 img: assets/img/10.jpg
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 ## Project Summary
@@ -28,7 +28,6 @@ Where:
 - **Land Value**: Estimated separately based on comparable land sales.
 
 ---
-
 ## Python Code Implementation
 
 ```python
