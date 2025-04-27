@@ -31,6 +31,6 @@ Math makes our modern day living work; I like making numbers work for me — mat
 
 Over the years, I’ve built out full workflows that cover everything from engineering data pipelines to deploying machine learning models. What I enjoy most is making data make sense—building tools, visuals, and models that help people actually see beyond a spreadsheet or graph and be confident in their decision. I'm driven by the challenge of finding solutions and doing analysis that’s not just solid, but truly a cut above—clear, thoughtful, and built to make an impact.
 
-With every analysis, there's trust in my work and confidence in my methods. And that expectation is met because I'm confident in my work. I aim to be a trailblazer—not just staying ahead, but creating a clearer path for my team to follow and build on. I'll actively engage, understand and implement current and cutting edge research and publications to drive innovation in the field. 
+With every analysis, there's trust in my work and confidence in my methods. And that expectation is met because I'm confident in my resources, tools, knowledge and skills. I aim to be a trailblazer—not just staying ahead, but creating a clearer path for my team to follow and build on. I'll actively engage, understand and implement current and cutting edge research and publications to drive innovation in the field. 
 
 Not sure whether to reach out? My linear regression model is confident I'll be an impactful team addition. Hope to hear from y'all!
