@@ -27,7 +27,6 @@ Where:
 - **Depreciation**: Loss in value from physical deterioration, functional obsolescence, or external obsolescence.
 - **Land Value**: Estimated separately based on comparable land sales.
 
----
 ## Python Code Implementation
 
 ```python
@@ -45,7 +44,7 @@ def cost_approach(replacement_cost, depreciation_amount, land_value):
     """
     property_value = (replacement_cost - depreciation_amount) + land_value
     return property_value
- 
+
 # Example usage
 replacement_cost = 250000  # dollars
 depreciation_amount = 30000  # dollars
@@ -53,3 +52,4 @@ land_value = 50000  # dollars
 
 estimated_value = cost_approach(replacement_cost, depreciation_amount, land_value)
 print(f"Estimated Property Value: ${estimated_value:,.2f}")
+```
