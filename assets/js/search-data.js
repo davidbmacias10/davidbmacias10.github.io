@@ -459,9 +459,9 @@ ninja.data = [{
           description: "Stellar Object Classification through Machine Learning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-home-valuation-model-cost-and-market-approaches",
-          title: 'Home Valuation Model - Cost and Market Approaches',
-          description: "Developing a Machine Learning Assisted Appraisal Model",
+            },},{id: "projects-campus-market-share-segmentation",
+          title: 'Campus Market Share Segmentation',
+          description: "Segmenting charter campuses by demographic market share and enrollment-target fit using H3 geospatial markets.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-1",
