@@ -18,11 +18,26 @@
   },
   "work": [
     {
+      "name": "IDEA Public Schools",
+      "position": "Data Scientist",
+      "url": "",
+      "startDate": "2025-08-01",
+      "endDate": "",
+      "summary": "Created ETL for Site Suitability Index using Uber's H3 hexagonal grid package. Complete A/B analysis, Cohort analysis, Time Series Forecasting and Regression analysis for student enrollment based on census demographics, transportation availiability and grade to grade evolution.",
+      "highlights": [
+        "Created Site Suitabiltiy Index to determine highly viable enrollment locations",
+        "Created time forecasting analysis to gauge school enrollment for resource allocation",
+        "Completed Cohort Analysis of students grade by grade as various alterations were conducted at varyign schools",
+        "Completed Regression anlaysis of DIBELS test to determine high impact domains",
+        "Created User Segmentation by delineating schoools into a 3x3 segmentation to obtain a clear 'what action to take' for each scenario"
+      ]
+    },
+    {
       "name": "El Paso County",
       "position": "Data Scientist",
       "url": "",
       "startDate": "2024-04-01",
-      "endDate": "",
+      "endDate": "2025-08-01",
       "summary": "Built data pipelines and improved data recall and accessibility across departments. Led to the development data analytics and data science accessability across departments.",
       "highlights": [
         "Completed ETL from various sources, along with data wrangling to make data analysis functional",
@@ -80,7 +95,7 @@
   ],
   "skills": [
     {
-      "name": "Data Analysis & Machine Learning",
+      "name": "Data Science & Machine Learning",
       "level": "Advanced",
       "icon": "",
       "keywords": [
@@ -90,17 +105,6 @@
         "Time Series Forecasting",
         "Regression",
         "Feature Engineering"
-      ]
-    },
-    {
-      "name": "Data Engineering",
-      "level": "Intermediate",
-      "icon": "",
-      "keywords": [
-        "Azure",
-        "Apache Spark",
-        "MySQL",
-        "Databricks"
       ]
     },
     {
