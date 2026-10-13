@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "David Macias",
-    "label": "Data Analyst",
+    "label": "Data Scientist",
     "image": "",
     "email": "davidbmacias10@gmail.com",
     "phone": "(720)-372-8511",
@@ -19,7 +19,7 @@
   "work": [
     {
       "name": "El Paso County",
-      "position": "Data Analyst",
+      "position": "Data Scientist",
       "url": "",
       "startDate": "2024-04-01",
       "endDate": "",
